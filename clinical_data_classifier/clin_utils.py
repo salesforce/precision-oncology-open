@@ -206,7 +206,7 @@ class NCCN(object):
             'distant_met_10year' : np.array([0.02, 0.06, 0.12]),
             'biochemical_failure_5year' : np.array([0.05, 0.15, 0.25]),
             'biochemical_failure_10year' : np.array([0.10, 0.20, 0.30]),
-            'disease_specific_survival_10year' : np.array([0.99, 0.96, 0.90]),
+            'disease_specific_survival_10year' : 1-np.array([0.99, 0.96, 0.90]),
             'survival_10year' : 1-np.array([0.67, 0.66, 0.65]),
         }
 

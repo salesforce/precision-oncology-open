@@ -43,9 +43,9 @@ parser.add_argument('--outcome', default='distant_met', type=str,
                     help='outcome. e.g. distant_met')
 parser.add_argument('--outcome_period', default='5', type=str,
                     help='outcome time period in years. e.g. 5')
-parser.add_argument('--testset', default='testset3',
+parser.add_argument('--testset', default='testset2',
                     type=str,
-                    choices=['testset3', 'RTOG-9202', 'RTOG-9413', 'RTOG-9408', 'RTOG-9910', 'RTOG-0126'],
+                    choices=['testset2', 'testset3', 'RTOG-9202', 'RTOG-9413', 'RTOG-9408', 'RTOG-9910', 'RTOG-0126'],
                     help='The testset. Options are testset3, RTOG-9202, RTOG-9413, RTOG-9408, RTOG-9910, RTOG-0126')
 parser.add_argument('--quilt_dir', type=str, default="/export/medical_ai/ucsf/ssl_rtog/moco/model_R50_b=256_lr=0.03_pg4plus/features/RTOG-{}_quilts/",
                     help='The directory containing directories of the form RTOG-{}_quilt, containing the quilts for each study')
@@ -198,12 +198,39 @@ print(df_X)
 print("y matrix")
 print(df_y)
 
-if args.testset == 'testset3':
+if args.testset == 'testset2':
     # Use fixed test set.
     train_size=0.8
     train_size=0.8
-    np.random.seed(2) # Clinical-Only gives 0.78 (no ablation)
-    np.random.seed(3) # Clinical-Only gives 0.745 (no ablation)
+    np.random.seed(2)
+
+    X_test = []
+    X_train = []
+    y_test = []
+    y_train = []
+
+    for sn in df_X_full['sn'].unique():
+        sn_y = df_y[df_X_full['sn'] == sn].copy()
+        sn_x = df_X[df_X_full['sn'] == sn].copy()
+        idxs = np.array(range(len(sn_y)))
+        np.random.shuffle(idxs)
+        cutoff = int(len(sn_y) * train_size)
+        X_train.append(sn_x.iloc[idxs[:cutoff]])
+        y_train.append(sn_y.iloc[idxs[:cutoff]])
+        X_test.append(sn_x.iloc[idxs[cutoff:]])
+        y_test.append(sn_y.iloc[idxs[cutoff:]])
+    X_test = pd.concat(X_test)
+    y_test = pd.concat(y_test)
+    X_train = pd.concat(X_train)
+    y_train = pd.concat(y_train)
+
+    np.random.seed() #unset random seed
+
+elif args.testset == 'testset3':
+    # Use fixed test set.
+    train_size=0.8
+    train_size=0.8
+    np.random.seed(3)
 
     X_test = []
     X_train = []

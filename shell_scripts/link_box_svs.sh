@@ -11,3 +11,4 @@
 /bin/bash ./link_box_svs_9413.sh
 /bin/bash ./link_box_svs_9408.sh
 /bin/bash ./link_box_svs_9910.sh
+/bin/bash ./link_box_svs_0126.sh

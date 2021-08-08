@@ -3,8 +3,6 @@
 Main py-wsi manager, Turtle, which keeps track of a collection of SVS images, and allows for
 patch sampling, storing, and accessing. 
 
-Author: @ysbecca
-
 """
 import itertools
 import math
