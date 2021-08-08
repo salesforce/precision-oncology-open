@@ -1,0 +1,40 @@
+program: run.py
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - "--config"
+  - "./configs/multitask/year_any/multimodal/late/quilt/config001.yaml"
+  - "--gpus" 
+  - "0"
+  - "--cv_split" 
+  - "3"
+  - "--train"
+method: bayes
+metric:
+  name: val/auroc.best
+  goal: maximize
+parameters:
+  lightning.trainer.lr:
+    distribution: categorical
+    values:
+      - 0.01
+      - 0.001
+      - 0.0001
+  train.optimizer.img_lr:
+    distribution: categorical
+    values:
+      - 0.01
+      - 0.001
+      - 0.0001
+  train.optimizer.emr_lr:
+    distribution: categorical
+    values:
+      - 0.01
+      - 0.001
+      - 0.0001
+  model.fusion.aggregation_type:
+    distribution: categorical 
+    values:
+      - 'mean'
+      - 'fcnn'

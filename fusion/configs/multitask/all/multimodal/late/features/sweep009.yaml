@@ -1,0 +1,71 @@
+program: run.py
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - "--config"
+  - "./configs/multitask/all/multimodal/late/features/config002.yaml"
+  - "--gpus" 
+  - "0"
+  - "--cv_split" 
+  - "4"
+  - "--train"
+  - "--img_ckpt_path"
+  - "/export/home/precision_oncology/fusion/data/ckpt/image_features_linear_model/4/2021_07_23_19_55_58/epoch=20-step=1343.ckpt"
+  - "--emr_ckpt_path"
+  - "/export/home/precision_oncology/fusion/data/ckpt/emr_tabnet_supervised/4/2021_07_22_20_19_08/epoch=31-step=127.ckpt"
+method: bayes
+metric:
+  name: val/auroc.best
+  goal: maximize
+parameters:
+  lightning.trainer.lr:
+    distribution: categorical
+    values:
+      - 0.01
+      - 0.001
+      - 0.0001
+  train.optimizer.img_lr:
+    distribution: categorical
+    values:
+      - 0.01
+      - 0.001
+      - 0.0001
+  train.optimizer.emr_lr:
+    distribution: categorical
+    values:
+      - 0.01
+      - 0.001
+      - 0.0001
+  model.fusion.aggregation_type:
+    distribution: categorical 
+    values:
+      - 'mean'
+      - 'fcnn'
+  model.vision.n_neurons:
+    distribution: categorical 
+    values:
+      - 128
+      - 64
+      - 32
+      - 16
+  model.vision.n_hidden:
+    distribution: categorical 
+    values:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 5
+  model.vision.use_batchnorm:
+    distribution: categorical 
+    values:
+      - true
+      - false
+  model.vision.dropout_prob:
+    distribution: categorical 
+    values:
+      - 0.0
+      - 0.25
+      - 0.5
+      - 0.75

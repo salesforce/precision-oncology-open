@@ -1,0 +1,58 @@
+program: run.py
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - "--config"
+  - "./configs/multitask/task_any/multimodal/joint/quilt/config002.yaml"
+  - "--gpus" 
+  - "0"
+  - "--cv_split" 
+  - "1"
+  - "--train"
+  - "--img_ckpt_path"
+  - "/export/home/precision_oncology/fusion/data/ckpt/image_nano_model/1/2021_07_14_03_26_54/epoch=25-step=1637.ckpt"
+  - "--emr_ckpt_path"
+  - "/export/home/precision_oncology/fusion/data/ckpt/emr_tabnet_supervised/1/2021_07_22_19_56_49/epoch=19-step=79.ckpt"
+method: bayes
+metric:
+  name: val/auroc.best
+  goal: maximize
+parameters:
+  lightning.trainer.lr:
+    distribution: categorical
+    values:
+      - 0.01
+      - 0.001
+      - 0.0001
+  train.optimizer.img_lr:
+    distribution: categorical
+    values:
+      - 0.01
+      - 0.001
+      - 0.0001
+  train.optimizer.emr_lr:
+    distribution: categorical
+    values:
+      - 0.01
+      - 0.001
+      - 0.0001
+  model.fusion.use_batchnorm:
+    distribution: categorical 
+    values:
+      - true
+      - false
+  model.fusion.num_hidden:
+    distribution: categorical 
+    values:
+      - 0
+      - 1
+      - 2
+      - 3
+  model.dropout_prob:
+    distribution: categorical 
+    values:
+      - 0.0
+      - 0.25
+      - 0.5
+      - 0.75

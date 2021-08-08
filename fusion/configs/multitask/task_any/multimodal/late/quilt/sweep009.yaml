@@ -1,0 +1,44 @@
+program: run.py
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - "--config"
+  - "./configs/multitask/task_any/multimodal/late/quilt/config002.yaml"
+  - "--gpus" 
+  - "0"
+  - "--cv_split" 
+  - "4"
+  - "--train"
+  - "--img_ckpt_path"
+  - "/export/home/precision_oncology/fusion/data/ckpt/image_nano_model/4/2021_07_20_16_32_08/epoch=13-step=881.ckpt"
+  - "--emr_ckpt_path"
+  - "/export/home/precision_oncology/fusion/data/ckpt/emr_tabnet_supervised/4/2021_07_22_20_19_08/epoch=31-step=127.ckpt"
+method: bayes
+metric:
+  name: val/auroc.best
+  goal: maximize
+parameters:
+  lightning.trainer.lr:
+    distribution: categorical
+    values:
+      - 0.01
+      - 0.001
+      - 0.0001
+  train.optimizer.img_lr:
+    distribution: categorical
+    values:
+      - 0.01
+      - 0.001
+      - 0.0001
+  train.optimizer.emr_lr:
+    distribution: categorical
+    values:
+      - 0.01
+      - 0.001
+      - 0.0001
+  model.fusion.aggregation_type:
+    distribution: categorical 
+    values:
+      - 'mean'
+      - 'fcnn'

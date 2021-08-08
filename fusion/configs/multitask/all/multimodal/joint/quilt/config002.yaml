@@ -1,0 +1,80 @@
+experiment_name: 'multitask_all_multimodal_joint_fusion_pretrained'
+phase: 'train'
+
+lightning:
+  trainer:
+    gpus: '0'
+    #accelerator: 'dp'
+    max_epochs: 50
+    lr: 2e-2
+    precision: 32
+    auto_lr_find: false
+    gradient_clip_val: 1.0
+  checkpoint_callback:
+    monitor: 'val/auroc'
+    dirpath: './data/ckpt'
+    save_last: true
+    mode: 'max'
+    save_top_k: 5
+  early_stopping_callback:
+    monitor: 'val/auroc'
+    min_delta: 0.00
+    patience: 10
+    verbose: False
+    mode: 'max'
+  logger:
+    logger_type: 'WandbLogger'
+    save_dir: './data/logger/'
+    name: 'emr_tabnet'
+    project: 'precision_oncology'
+
+data: 
+  prognostic: true 
+  dataset: 'all'
+  target: 'distant_met_5year'
+  weighted_sample: true
+
+model:
+  fusion: 
+    type: 'JointFusionModel'
+    freeze_img_model: false
+    freeze_emr_model: false
+    use_batchnorm: false
+    num_hidden: 0
+    dropout_prob: 0.0
+  vision: 
+    type: 'NanoModel'
+    n_kernels: 128
+    use_batchnorm: false
+    use_hidden_layer: true
+    dropout_prob: 0.25
+  emr: 
+    n_d: 32
+    n_a: 32
+    n_steps: 8
+    gamma: 1.3
+    n_independent: 4
+    n_shared: 4
+    epsilon: 1e-15
+    virtual_batch_size: 128
+    momentum: 0.02
+    mask_type: "sparsemax"
+
+train: 
+  batch_size: 32
+  num_workers: 8
+  lambda_sparse: 0.001
+  loss_fn: 
+    name: 'BCEWithLogitsLoss'
+  optimizer: 
+    img_lr: 0.01
+    emr_lr: 0.02
+    name: 'Adam'
+    weight_decay: 1e-6
+  scheduler: 
+    name: 'StepLR'
+    monitor: 'val_loss'
+    interval: 'epoch'
+    frequency: 1
+    step_size: 10
+    gamma: 0.9

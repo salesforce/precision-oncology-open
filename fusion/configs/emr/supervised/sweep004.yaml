@@ -1,0 +1,67 @@
+program: run.py
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - "--config"
+  - "./configs/emr/supervised/config001.yaml"
+  - "--gpus" 
+  - "0"
+  - "--cv_split" 
+  - "4"
+  - "--train"
+method: bayes
+metric:
+  name: val/auroc.best
+  goal: maximize
+parameters:
+  lightning.trainer.lr:
+    distribution: categorical
+    values:
+      - 0.2
+      - 0.02
+      - 0.002
+  model.n_d:
+    distribution: int_uniform
+    min: 8
+    max: 64
+  model.n_a:
+    distribution: int_uniform 
+    min: 8
+    max: 64
+  model.n_steps:
+    distribution: int_uniform 
+    min: 3
+    max: 10
+  model.n_independent:
+    distribution: int_uniform 
+    min: 1 
+    max: 5
+  model.n_shared:
+    distribution: int_uniform
+    min: 1
+    max: 5
+  model.momentum:
+    distribution: uniform 
+    min: 0.01
+    max: 0.4
+  model.gamma:
+    distribution: uniform
+    min: 1.01
+    max: 2.01
+  model.mask_type:
+    distribution: categorical
+    values:
+      - 'entmax'
+      - 'sparsemax'
+  train.lambda_sparse:
+    distribution: categorical
+    values:
+      - 0.01
+      - 0.001
+      - 0.0001
+  data.weighted_sample:
+    distribution: categorical
+    values:
+      - true
+      - false

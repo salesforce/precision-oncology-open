@@ -1,0 +1,66 @@
+experiment_name: 'multitask_task_any_emr_tabnet_with_pretraining'
+phase: 'supervised'
+
+lightning:
+  trainer:
+    gpus: '0'
+    max_epochs: 50
+    lr: 2e-2
+    precision: 32
+    auto_lr_find: false
+    gradient_clip_val: 1.0
+  checkpoint_callback:
+    monitor: 'val/auroc'
+    dirpath: './data/ckpt'
+    save_last: true
+    mode: 'max'
+    save_top_k: 5
+  early_stopping_callback:
+    monitor: 'val/auroc'
+    min_delta: 0.00
+    patience: 10
+    verbose: False
+    mode: 'max'
+  logger:
+    logger_type: 'WandbLogger'
+    save_dir: './data/logger/'
+    name: 'emr_tabnet'
+    project: 'precision_oncology'
+
+
+data: 
+  prognostic: true 
+  dataset: 'emr'
+  target: 'task_any'
+  weighted_sample: true
+
+model:
+  n_d: 8
+  n_a: 8
+  n_steps: 3
+  gamma: 1.3
+  #cat_emb_dim: 1
+  n_independent: 2
+  n_shared: 2
+  epsilon: 1e-15
+  virtual_batch_size: 128
+  momentum: 0.02
+  mask_type: "sparsemax"
+  pretraining_ratio: 0.4
+
+train: 
+  batch_size: 1024
+  num_workers: 16
+  lambda_sparse: 0.001
+  loss_fn: 
+    name: 'BCEWithLogitsLoss'
+  optimizer: 
+    name: 'Adam'
+    weight_decay: 1e-6
+  scheduler: 
+    name: 'StepLR'
+    monitor: 'val_loss'
+    interval: 'epoch'
+    frequency: 1
+    step_size: 10
+    gamma: 0.9

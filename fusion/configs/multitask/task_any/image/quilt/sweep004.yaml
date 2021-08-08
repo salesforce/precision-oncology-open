@@ -1,0 +1,47 @@
+program: run.py
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - "--config"
+  - "./configs/multitask/task_any/image/quilt/config001.yaml"
+  - "--cv_split" 
+  - "4"
+  - "--gpus" 
+  - "0"
+  - "--train"
+method: bayes
+metric:
+  name: val/auroc.best
+  goal: maximize
+parameters:
+  lightning.trainer.lr:
+    distribution: categorical
+    values:
+      - 0.01
+      - 0.001
+      - 0.0001
+  model.n_kernels:
+    distribution: categorical 
+    values:
+      - 128
+      - 64
+      - 32
+      - 16
+  model.use_batchnorm:
+    distribution: categorical 
+    values:
+      - true
+      - false
+  model.use_hidden_layer:
+    distribution: categorical 
+    values:
+      - true
+      - false
+  model.dropout_prob:
+    distribution: categorical 
+    values:
+      - 0.0
+      - 0.25
+      - 0.5
+      - 0.75
