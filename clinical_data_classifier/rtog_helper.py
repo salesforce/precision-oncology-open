@@ -30,6 +30,8 @@ def rtog_from_study_number(study_number, create_endpoints=True, standardize=Fals
         rtog.standardize_pelvic_rt()
         rtog.standardize_prostate_dose()
         rtog.standardize_rt_complete()
+        rtog.standardize_biochemical_failure()
+        rtog.standardize_disease_specific_survival()
         rtog.cause_of_death()
 #     rtog_object.standardize_baseline_serum() # Note: this line takes a long time to run, due to unit conversions. Also Osama said the data is too noisy to use.
         rtog.standardize_unknown_values_in_predictor_variables() # note: this must be done after standardize_rt_complete, bc that re-sets some unknown vars. This replaces the 'unknown' classes with nans, so that boosting can intelligently impute.
@@ -88,7 +90,7 @@ class RTOG(object):
             self.df = self.df.fillna(self.default_class_y)
 
             if create_endpoints:
-                for timeframe in [5,10,15]:
+                for timeframe in [5,10,15,25]:
                     self.add_distant_met_Nyr_endpoint(timeframe)
                     self.add_biochemical_failure_Nyr_endpoint(timeframe)
                     self.add_disease_specific_survival_Nyr_endpoint(timeframe)
@@ -482,6 +484,99 @@ class RTOG(object):
         self.df.to_csv(filename)
 
 
+    def standardize_disease_specific_survival(self, drop_prior_columns=True):
+        self.standardize_disease_specific_survival_events(drop_prior_columns=drop_prior_columns)
+        self.standardize_disease_specific_survival_years(drop_prior_columns=drop_prior_columns)
+
+        # If DSS-years unspecified but DSS censored, set DSS-years to 25 (assume long time).
+        isnan = self.df['disease_specific_survival_years'].isnull().values
+        iszero = (self.df['disease_specific_survival'] == 0).values
+        self.df.loc[np.logical_and(isnan, iszero), 'disease_specific_survival_years'] = 25
+
+
+    def standardize_disease_specific_survival_events(self, drop_prior_columns=True):
+        """Merges variants of DSS, prioritizing phoenix, and naming everything disease_specific_survival
+        Args:
+            drop_prior_columns(bool): If True, drops the original columns.
+        """
+        bcr_fields = [f for f in self.df.columns if 'disease_specific_survival' in f]
+        e_bcr_fields = np.array([f for f in bcr_fields if 'year' not in f])
+        idx_sort = []
+        idx_sort.append(np.where(['phoenix' in e for e in e_bcr_fields])[0])
+        idx_sort.append(np.where(['disease_specific_survival' == e for e in e_bcr_fields])[0])
+        idx_sort = np.array([i[0] for i in idx_sort if len(i) > 0])
+        e_bcr = self.df[e_bcr_fields[idx_sort]]
+        new_values = e_bcr[e_bcr.columns[0]]
+        for i in range(1,len(e_bcr.columns)):
+            next_best = e_bcr[e_bcr.columns[i]][new_values.isnull()].values.copy()
+            new_values = new_values.fillna(pd.Series(next_best))
+        self.df = self.df.assign(disease_specific_survival=new_values)
+
+
+    def standardize_disease_specific_survival_years(self, drop_prior_columns=True):
+        """Merges variants of BCR, prioritizing phoenix, and naming everything disease_specific_survival
+        Args:
+            drop_prior_columns(bool): If True, drops the original columns.
+        """
+        bcr_fields = [f for f in self.df.columns if 'disease_specific_survival' in f]
+        e_bcr_fields = np.array([f for f in bcr_fields if 'years' in f])
+        idx_sort = []
+        idx_sort.append(np.where(['phoenix' in e for e in e_bcr_fields])[0])
+        idx_sort.append(np.where(['disease_specific_survival_years' == e for e in e_bcr_fields])[0])
+        idx_sort = np.array([i[0] for i in idx_sort if len(i) > 0])
+        e_bcr = self.df[e_bcr_fields[idx_sort]]
+        new_values = e_bcr[e_bcr.columns[0]]
+        for i in range(1,len(e_bcr.columns)):
+            next_best = e_bcr[e_bcr.columns[i]][new_values.isnull()].values.copy()
+            new_values = new_values.fillna(pd.Series(next_best))
+        self.df = self.df.assign(disease_specific_survival_years=new_values)
+
+
+    def standardize_biochemical_failure(self, drop_prior_columns=True):
+        self.standardize_biochemical_failure_events(drop_prior_columns=drop_prior_columns)
+        self.standardize_biochemical_failure_years(drop_prior_columns=drop_prior_columns)
+
+
+    def standardize_biochemical_failure_events(self, drop_prior_columns=True):
+        """Merges variants of BCR, prioritizing phoenix, and naming everything biochemical_failure
+        Args:
+            drop_prior_columns(bool): If True, drops the original columns.
+        """
+        bcr_fields = [f for f in self.df.columns if 'biochemical' in f]
+        e_bcr_fields = np.array([f for f in bcr_fields if 'year' not in f])
+        idx_sort = []
+        idx_sort.append(np.where(['phoenix' in e for e in e_bcr_fields])[0])
+        idx_sort.append(np.where(['biochemical_failure' == e for e in e_bcr_fields])[0])
+        idx_sort.append(np.where(['astro' in e for e in e_bcr_fields])[0])
+        idx_sort = np.array([i[0] for i in idx_sort if len(i) > 0])
+        e_bcr = self.df[e_bcr_fields[idx_sort]]
+        new_values = e_bcr[e_bcr.columns[0]]
+        for i in range(1,len(e_bcr.columns)):
+            next_best = e_bcr[e_bcr.columns[i]][new_values.isnull()].values.copy()
+            new_values = new_values.fillna(pd.Series(next_best))
+        self.df = self.df.assign(biochemical_failure=new_values)
+
+
+    def standardize_biochemical_failure_years(self, drop_prior_columns=True):
+        """Merges variants of BCR, prioritizing phoenix, and naming everything biochemical_failure
+        Args:
+            drop_prior_columns(bool): If True, drops the original columns.
+        """
+        bcr_fields = [f for f in self.df.columns if 'biochemical' in f]
+        e_bcr_fields = np.array([f for f in bcr_fields if 'years' in f])
+        idx_sort = []
+        idx_sort.append(np.where(['phoenix' in e for e in e_bcr_fields])[0])
+        idx_sort.append(np.where(['biochemical_failure_years' == e for e in e_bcr_fields])[0])
+        idx_sort.append(np.where(['astro' in e for e in e_bcr_fields])[0])
+        idx_sort = np.array([i[0] for i in idx_sort if len(i) > 0])
+        e_bcr = self.df[e_bcr_fields[idx_sort]]
+        new_values = e_bcr[e_bcr.columns[0]]
+        for i in range(1,len(e_bcr.columns)):
+            next_best = e_bcr[e_bcr.columns[i]][new_values.isnull()].values.copy()
+            new_values = new_values.fillna(pd.Series(next_best))
+        self.df = self.df.assign(biochemical_failure_years=new_values)
+
+
     def standardize_baseline_psa(self, drop_prior_columns=True):
         """Merges variants of 'baseline_psa' together across studies.
         Args:
@@ -491,6 +586,7 @@ class RTOG(object):
             self.df['baseline_psa'] = self.df['psa']
             if drop_prior_columns:
                 self.df.drop(columns='psa')
+
 
     def standardize_baseline_serum(self, drop_prior_columns=True):
         """Merges baseline_serum* values into a single, column: baseline_serum_ng_dl, deleting the original columns.

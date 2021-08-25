@@ -204,6 +204,8 @@ class NCCN(object):
         self.risk_group_probs = {
             'distant_met_5year' : np.array([0.01, 0.03, 0.12]),
             'distant_met_10year' : np.array([0.02, 0.06, 0.12]),
+            'distant_met_15year' : np.array([0.03, 0.09, 0.12]), # note: this isn't in RTOG papers.
+            'distant_met_25year' : np.array([0.03, 0.09, 0.12]), # note: this isn't in RTOG papers.
             'biochemical_failure_5year' : np.array([0.05, 0.15, 0.25]),
             'biochemical_failure_10year' : np.array([0.10, 0.20, 0.30]),
             'disease_specific_survival_10year' : 1-np.array([0.99, 0.96, 0.90]),

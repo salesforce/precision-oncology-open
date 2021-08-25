@@ -23,6 +23,16 @@ _slideInfo_9408 = [
     '/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/12.22.2020/9408_12.22.2020 DeIDed Slide Information.xlsx',
     '/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/1.12.2021/9408_1.12.2021 DeIDed Slide Information.xlsx',
     '/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/1.26.2021/9408_1.26.2021 DeIDed Slide Information.xlsx',
+    '/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/2.16.2021/9408_2.16.2021 DeIDed Slide Information.xlsx',
+    '/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/3.2.2021/9408_3.2.2021 DeIDed Slide Information.xlsx',
+    '/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/3.16.2021/9408_3.16.2021 DeIDed Slide Information.xlsx',
+    '/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/3.30.2021/9408_3.30.2021 DeIDed Slide Information.xlsx',
+    '/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/4.13.2021/9408_4.13.2021 DeIDed Slide Information.xlsx',
+    '/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/4.27.2021/9408_4.27.2021 DeIDed Slide Information.xlsx',
+    '/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/5.11.2021/9408_5.11.2021 DeIDed Slide Information.xlsx',
+    '/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/5.13.2021 all rescans/9408_5.13.2021 DeIDed Slide Information.xlsx',
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/6.9.2021/9408_6.9.2021 DeIDed Slide Information.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/7.28.2021/9408_7.28.2021 DE-ID'ed Export.xlsx"
 ]
 
 _slideInfo_9202 = [
@@ -34,7 +44,12 @@ _slideInfo_9202 = [
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/11.9.2020/9202_11.9.2020 DeIDed Slide Information.xlsx",
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/12.22.2020/9202_12.22.2020 DeIDed Slide Information.xlsx",
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/12.8.2020/9202_12.8.2020 DeIDed Slide Information.xlsx",
-    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/9.14.2020/9202_9.14.2020 DeIDed Slide Information Updated 10.21.20.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/2.16.2021/9202_2.16.2020 DeIDed Slide Information.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/3.16.2021/9202_3.16.2020 DeIDed Slide Information updated 4.5.2021.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/4.27.2021/9202_4.27.2021 DeIDed Slide Information.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/5.11.2021 all rescans/9202_5.11.2021 DeIDed Slide Information.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/5.25.2021/9202_5.25.2021 DeIDed Slide Information.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/9.14.2020/9202_9.14.2020 DeIDed Slide Information Updated 10.21.20.xlsx"
 ]
 
 _slideInfo_9413 = [
@@ -43,12 +58,32 @@ _slideInfo_9413 = [
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9413/11.24.2020/9413_11.24.2020 DeIDed Slide Information.xlsx",
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9413/11.9.2020 RC slides/9413_11.9.2020 DeIDed Slide Information.xlsx",
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9413/8.25.2020/8.25.2020 DeIDed Slide Information Updated 10.21.2020.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9413/5.11.2021 3 rescans/9413_5.11.2021 DeIDed Slide Information.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9413/6.9.2021/9413_6.9.2021 DeIDed Slide Information.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9413/7.28.2021 Histo/De-ided-9413_7.28.2021 Histology Export.xlsx" 
+]
+
+_slideInfo_9910 = [
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9910/6.9.2021/9910_6.9.2021 DeIDed Slide Information.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9910/6.21.2021/9910_6.21.2021 DeIDed Slide Information.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9910/7.21.2021 Blurry/9910_7.21.2021_Blurry DeIDed Slide Information.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9910/7.28.2021/Deided-9910_7.28.2021 Export.xlsx"
+]
+
+
+_slideInfo_0126 = [
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-0126/6.30.2021/0126_6.30.2021 DeIDed Slide Information.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-0126/7.21.2021/0126_7.21.2021 DeIDed Slide Information.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-0126/7.21.2021 Blurry/0126_7.21.2021 Blurry DeIDed Slide Information.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-0126/7.28.2021/0126_7.28.2021 DE-ID'ed Export.xlsx"
 ]
 
 slide_case_correspondence_files = {
     '9202' : _slideInfo_9202,
     '9408' : _slideInfo_9408,
     '9413' : _slideInfo_9413,
+    '9910' : _slideInfo_9910,
+    '0126' : _slideInfo_0126
 }
 
 
@@ -557,10 +592,12 @@ rtog_endpoints = {
         'distant_met_years',
         'local_progression',
         'local_progression_years',
-        'astro_bf',
-        'astro_bf_years',
+        'astro_biochemical_failure',
+        'astro_biochemical_failure_years',
         'phoenix_biochemical_failure', #note: in this study, phoenix_failure is a better version of biochem failure. A more recent definition.
         'phoenix_biochemical_failure_years',
+        'biochemical_failure',
+        'biochemical_failure_years',
         'nonprotocol_years',
         'nonprotocol_type',
     ],
@@ -573,85 +610,105 @@ rtog_binary_mapping = {
         'distant_met_5year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'distant_met_10year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'distant_met_15year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'distant_met_25year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_5year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_10year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_15year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'biochemical_failure_25year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_5year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_10year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_15year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'disease_specific_survival_25year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'survival_5year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
         'survival_10year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
         'survival_15year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
+        'survival_25year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
     },
     '9408' : {
         'distant_met': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'distant_met_5year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'distant_met_10year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'distant_met_15year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'distant_met_25year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_5year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_10year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_15year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'biochemical_failure_25year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_5year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_10year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_15year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'disease_specific_survival_25year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'survival_5year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
         'survival_10year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
         'survival_15year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
+        'survival_25year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
     },
     '9413' : {
         'distant_met': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'distant_met_5year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'distant_met_10year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'distant_met_15year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'distant_met_25year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_5year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_10year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_15year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'biochemical_failure_25year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_5year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_10year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_15year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'disease_specific_survival_25year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'survival_5year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
         'survival_10year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
         'survival_15year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
+        'survival_25year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
     },
     '9910' : {
         'distant_met': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'distant_met_5year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'distant_met_10year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'distant_met_15year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'distant_met_25year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_5year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_10year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_15year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'biochemical_failure_25year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_5year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_10year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_15year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'disease_specific_survival_25year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'survival_5year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
         'survival_10year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
         'survival_15year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
+        'survival_25year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
     },
     '0126' : {
         'distant_met': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'distant_met_5year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'distant_met_10year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'distant_met_15year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'distant_met_25year': {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_5year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_10year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'biochemical_failure_15year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'biochemical_failure_25year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_5year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_10year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'disease_specific_survival_15year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
+        'disease_specific_survival_25year' : {1:1, 0:0, 2:0}, # 0 - censored, 1 - Failure, 2 - competing Event
         'survival_5year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
         'survival_10year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
         'survival_15year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
+        'survival_25year' : {1:1, 0:0}, # 0 - Alive, 1 - dead
     },
 }
 
@@ -855,6 +912,8 @@ rtog_field_mapping = {
     "primary_gleason" : "gleason_primary",
     "secondary_gleason" : "gleason_secondary",
     "randomized_year" : "randomization_year",
+    "astro_bf" : "astro_biochemical_failure",
+    "astro_bf_years" : "astro_biochemical_failure_years",
     "phoenix_bf" : "phoenix_biochemical_failure",
     "phoenix_bf_years" : "phoenix_biochemical_failure_years",
     "phoenix_failure" : "phoenix_biochemical_failure",
@@ -918,8 +977,8 @@ rtog_categorical_fields = {
     "ethnicity",
     "nonprotocol_type",
     "local_progression",
-    "astro_bf",
-    "phoenix_bf",
+    "astro_biochemical_failure",
+    "phoenix_biochemical_failure",
     "ae_timeframe",
 }
 
