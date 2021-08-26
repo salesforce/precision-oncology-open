@@ -32,7 +32,8 @@ _slideInfo_9408 = [
     '/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/5.11.2021/9408_5.11.2021 DeIDed Slide Information.xlsx',
     '/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/5.13.2021 all rescans/9408_5.13.2021 DeIDed Slide Information.xlsx',
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/6.9.2021/9408_6.9.2021 DeIDed Slide Information.xlsx",
-    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/7.28.2021/9408_7.28.2021 DE-ID'ed Export.xlsx"
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/7.28.2021/9408_7.28.2021 DE-ID'ed Export.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9408/8.3.2021 Histo/9408_8.3.2021-Deided- Histo Export.xlsx"
 ]
 
 _slideInfo_9202 = [
@@ -49,7 +50,9 @@ _slideInfo_9202 = [
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/4.27.2021/9202_4.27.2021 DeIDed Slide Information.xlsx",
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/5.11.2021 all rescans/9202_5.11.2021 DeIDed Slide Information.xlsx",
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/5.25.2021/9202_5.25.2021 DeIDed Slide Information.xlsx",
-    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/9.14.2020/9202_9.14.2020 DeIDed Slide Information Updated 10.21.20.xlsx"
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/9.14.2020/9202_9.14.2020 DeIDed Slide Information Updated 10.21.20.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/8.3.2021/9202_Upload_8.3.2021 De-ided.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9202/8.3.2021 Histo/9202 Histoslides_Deided-8.3.2021.xlsx"
 ]
 
 _slideInfo_9413 = [
@@ -67,7 +70,8 @@ _slideInfo_9910 = [
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9910/6.9.2021/9910_6.9.2021 DeIDed Slide Information.xlsx",
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9910/6.21.2021/9910_6.21.2021 DeIDed Slide Information.xlsx",
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9910/7.21.2021 Blurry/9910_7.21.2021_Blurry DeIDed Slide Information.xlsx",
-    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9910/7.28.2021/Deided-9910_7.28.2021 Export.xlsx"
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9910/7.28.2021/Deided-9910_7.28.2021 Export.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-9910/8.10.2021/9910-8.11.2021_deid-upload.xlsx"
 ]
 
 
@@ -75,7 +79,9 @@ _slideInfo_0126 = [
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-0126/6.30.2021/0126_6.30.2021 DeIDed Slide Information.xlsx",
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-0126/7.21.2021/0126_7.21.2021 DeIDed Slide Information.xlsx",
     "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-0126/7.21.2021 Blurry/0126_7.21.2021 Blurry DeIDed Slide Information.xlsx",
-    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-0126/7.28.2021/0126_7.28.2021 DE-ID'ed Export.xlsx"
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-0126/7.28.2021/0126_7.28.2021 DE-ID'ed Export.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-0126/8.3.2021/0126_8.3.21 De-id-Export.xlsx",
+    "/export/medical_ai/ucsf/box_data/Aperio Images of NRG GU H&E Slides/RTOG-0126/8.10.2021/0126-8.10.2021-Deided-upload.xlsx"
 ]
 
 slide_case_correspondence_files = {

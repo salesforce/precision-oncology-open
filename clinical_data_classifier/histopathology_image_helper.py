@@ -24,7 +24,7 @@ class CaseManager(object):
     """Helper class to map amongst (slide-id, case-id, case-features, etc.)
     """
     def __init__(self):
-        self.study_numbers = ['9202', '9413', '9408']
+        self.study_numbers = ['9202', '9413', '9408', "9910", "0126"]
         self.rtogs = {sn : rtog_from_study_number(sn).df for sn in self.study_numbers}
         self.slidecase = {sn : load_slide_case_correspondence(sn, return_skipped=False) for sn in self.study_numbers}
 
@@ -68,6 +68,27 @@ def load_slide_case_correspondence(study_number, return_skipped=False):
     dfs = []
     for filepath in filepaths:
         df = pd.read_excel(filepath)
+        if "Unnamed: 2" in df.columns:
+            df.rename(columns=df.iloc[0], inplace = True)
+            df.drop([0], inplace = True)
+        if "CN_deidentified" in df.columns:
+            df = df.rename(columns={"CN_deidentified":"cn_deidentified"})
+        if "CN_DeIdentified" in df.columns:
+            df = df.rename(columns={"CN_DeIdentified":"cn_deidentified"})
+        if "CN_Deidentified" in df.columns:
+            df = df.rename(columns={"CN_Deidentified":"cn_deidentified"})
+        if "CN Deid" in df.columns:
+            df = df.rename(columns={"CN Deid":"cn_deidentified"}) 
+        if "CN-DeID'ed" in df.columns:
+            df = df.rename(columns={"CN-DeID'ed":"cn_deidentified"}) 
+        if "CN DE-ID" in df.columns:
+            df = df.rename(columns={"CN DE-ID":"cn_deidentified"}) 
+        if "CN deidentified" in df.columns:
+            df = df.rename(columns={"CN deidentified":"cn_deidentified"}) 
+        if "CN De-Identified" in df.columns:
+            df = df.rename(columns={"CN De-Identified":"cn_deidentified"})
+        if "CN De-ID" in df.columns:
+            df = df.rename(columns={"CN De-ID":"cn_deidentified"})
         df.columns = df.columns.str.lower()
         dfs.append(df)
     dfs = pd.concat(dfs)
