@@ -1,0 +1,109 @@
+biochemical_failure_10year_RTOG-0126_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:51:17891049.txt
+(0.6313423645320196, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 5, 'learning_rate': 0.13967673145341575, 'iterations': 3000})
+-----
+
+biochemical_failure_10year_RTOG-9202_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:18:34505513.txt
+(0.6420379386526861, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 7, 'learning_rate': 0.004628270482512236, 'iterations': 3000})
+-----
+
+biochemical_failure_10year_RTOG-9408_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:59:44975911.txt
+(0.6195022318854903, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 2, 'learning_rate': 0.3551287371802169, 'iterations': 3000})
+-----
+
+biochemical_failure_10year_RTOG-9413_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2309:03:45395482.txt
+(0.6607746191801651, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 6, 'learning_rate': 0.05875855960317617, 'iterations': 3000})
+-----
+
+biochemical_failure_10year_RTOG-9910_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:51:50506470.txt
+(0.6230262421597108, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 6, 'learning_rate': 0.008818630522819107, 'iterations': 3000})
+-----
+
+biochemical_failure_5year_RTOG-0126_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2309:30:28974748.txt
+(0.6477630302990323, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 2, 'learning_rate': 0.4039228009961051, 'iterations': 3000})
+-----
+
+biochemical_failure_5year_RTOG-9202_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:51:11545724.txt
+(0.6454421878083183, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 7, 'learning_rate': 0.003743396141626407, 'iterations': 3000})
+-----
+
+biochemical_failure_5year_RTOG-9408_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2309:25:42748815.txt
+(0.6124662381301773, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 5, 'learning_rate': 0.008878320587125543, 'iterations': 3000})
+-----
+
+biochemical_failure_5year_RTOG-9413_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2309:20:14735290.txt
+(0.670165019741291, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 6, 'learning_rate': 0.010573242114715933, 'iterations': 3000})
+-----
+
+biochemical_failure_5year_RTOG-9910_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:56:41717707.txt
+(0.6277949568044885, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 2, 'learning_rate': 0.0562927727930643, 'iterations': 3000})
+-----
+
+disease_specific_survival_10year_RTOG-0126_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:51:48096011.txt
+(0.7213940648723256, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 4, 'learning_rate': 0.2187688678732056, 'iterations': 3000})
+-----
+
+disease_specific_survival_10year_RTOG-9202_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:39:15137786.txt
+(0.6656810159079448, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 2, 'learning_rate': 0.190766008592434, 'iterations': 3000})
+-----
+
+disease_specific_survival_10year_RTOG-9408_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:46:11470243.txt
+(0.6446020357083263, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 3, 'learning_rate': 0.20233571704040376, 'iterations': 3000})
+-----
+
+disease_specific_survival_10year_RTOG-9413_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:59:05331794.txt
+(0.6730754688445251, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 2, 'learning_rate': 0.047794640564327626, 'iterations': 3000})
+-----
+
+disease_specific_survival_10year_RTOG-9910_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:47:11379148.txt
+(0.6404656011118832, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 9, 'learning_rate': 0.15612003911713854, 'iterations': 3000})
+-----
+
+distant_met_10year_RTOG-0126_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2309:04:53941811.txt
+(0.6686619358791097, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 2, 'learning_rate': 3.1651393370864005e-05, 'iterations': 3000})
+-----
+
+distant_met_10year_RTOG-9202_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:21:20425247.txt
+(0.6837079225994889, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 3, 'learning_rate': 0.013651305160061132, 'iterations': 3000})
+-----
+
+distant_met_10year_RTOG-9408_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:41:14777197.txt
+(0.6566107419917598, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 7, 'learning_rate': 0.06736905792759854, 'iterations': 3000})
+-----
+
+distant_met_10year_RTOG-9413_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2309:16:31076639.txt
+(0.6517235166946913, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 2, 'learning_rate': 0.019772457601129338, 'iterations': 3000})
+-----
+
+distant_met_10year_RTOG-9910_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2309:16:02732792.txt
+(0.6452490036130667, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 8, 'learning_rate': 0.8998316145105133, 'iterations': 3000})
+-----
+
+distant_met_5year_testset3_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:37:03008221.txt
+(0.7436549891207523, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 6, 'learning_rate': 0.04295756211268539, 'iterations': 3000})
+-----
+
+results.tmp
+results.tmp
+
+-----
+
+survival_10year_RTOG-0126_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:48:08704670.txt
+(0.632232079340503, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 3, 'learning_rate': 0.1615884032476831, 'iterations': 3000})
+-----
+
+survival_10year_RTOG-9202_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:23:36791802.txt
+(0.6190904730760847, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 2, 'learning_rate': 4.856889099685639e-05, 'iterations': 3000})
+-----
+
+survival_10year_RTOG-9408_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2308:54:37811983.txt
+(0.6367161233418624, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 4, 'learning_rate': 0.004126306796383262, 'iterations': 3000})
+-----
+
+survival_10year_RTOG-9413_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2309:10:43212791.txt
+(0.6622381584727826, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 2, 'learning_rate': 0.14117516205581318, 'iterations': 3000})
+-----
+
+survival_10year_RTOG-9910_exportmedical_aiucsfssl_rtogmocomodel_R50_b=256_lr=003_pg4plusfeaturesRTOG-{}_quilts_2021-06-2309:26:05168219.txt
+(0.6558104820875719, {'early_stopping_rounds': 3000, 'eval_metric': 'AUC', 'train_dir': '/tmp/catboost_info', 'one_hot_max_size': 10, 'verbose': False, 'thread_count': 4, 'depth': 4, 'learning_rate': 0.06915084099541575, 'iterations': 3000})
+-----
+

@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: torch-pod-aesteva-no-gpu
+  namespace: sfr-ns-aesteva
+spec:
+  selector:
+    matchLabels:
+      app: torch-pod-aesteva-no-gpu
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: torch-pod-aesteva-no-gpu
+    spec:
+      restartPolicy: Always
+      volumes:
+        - name: sfr-home-pv-aesteva
+          persistentVolumeClaim:
+            claimName: sfr-home-pvc-aesteva
+        - name: sfr-share-pv-aesteva
+          persistentVolumeClaim:
+            claimName: sfr-share-pvc-aesteva
+        - name: sfr-medical-ai-pv-aesteva
+          persistentVolumeClaim:
+            claimName: sfr-medical-ai-pvc-aesteva
+        - name: dshm
+          emptyDir:
+            medium: Memory
+#     tolerations:
+#     - key: "gpu_num"
+#       operator: "Equal"
+#       value: "4"
+#       effect: "NoSchedule"
+      containers:
+        - name: torch-pod-aesteva
+          image: "gcr.io/salesforce-research-internal/torch-pod-aesteva"
+          command: ["sleep", "infinity"]
+          ports:
+          - containerPort: 8888
+          resources:
+            limits:
+             cpu: "95"
+          volumeMounts:
+            - name: sfr-home-pv-aesteva
+              mountPath: "/export/home"
+            - name: sfr-share-pv-aesteva
+              mountPath: "/export/share"
+            - name: sfr-medical-ai-pv-aesteva
+              mountPath: "/export/medical_ai"
+            - name: dshm
+              mountPath: /dev/shm
