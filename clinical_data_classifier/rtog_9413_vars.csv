@@ -1,0 +1,49 @@
+Variable Name,sn,,rx,Randomization_year,age,Kanofsky,Node_risk,race,Prior_cancer,Inter_cardio,Inter_diabetes,Inter_hyperextension,Inter_other,,gleason_primary,,Gleason_combined,Baseline_psa,,tstage,Prior_surgery,Prior_surgery_years,Prior_surgery_type,Prior_rt,Prior_rt_years,Prior_hormones,Prior_homrones_years,Orchiectomy,Orchiectomy_years,Prior_chemo,Prior_chemo_years,Primor_chemo_years,Baseline_serum,Baseline_serum_Unit,rt_total_dose,rt_start_years,rt_end_years,Rt_fractions,Rt_end_reason,Energy_of_beam,Nonprotocol_years,Nonprotocol_type,Nonprotocol_details,survival,survival_years,cod,Distant_mets,Distant_mets_years,Biochemical_failure,Biochemical_failure _years,AE_time_frame,AE _cat,AE _grade,AE _date_,,sn,Cn_deidentified,rx,PSA,Psa_unit,Psa_years,Form,,,sn,Cn_deidentified,rx,Serum_value,Serum_Unit,Serum_years,Form,,sn,Cn_deidentified,Slide_id,Slide_id,Usi_Short,USI_Specimen,Block_ID,,,,,,,,,,,
+Format/Coding,9413,,"1 = Pre + Boost
+2 = Pre + Prostate
+3= Boost/Horm
+4= Pros Rt/Horm",continuous,continuous,Continuous,"1 = > 15%
+2 = ≤ 15%","1 = White
+2 = Hispanic
+3 = African American
+4 = Asian
+6 = Native American
+7 = Other","1 = No
+2 = Yes
+9 = Unknown","1 = No
+2 = Yes
+9 = Unknown","1 = No
+2 = Yes
+9 = Unknown","1 = No
+2 = Yes
+9 = Unknown","1 = No
+2 = Yes
+9 = Unknown",,"1-5, 9=Unknown",,"2-10, blank = not reported",Continuous,,"5=T2 NOS 6=T2a 
+7=T2b 8 = T2C
+10=T3 NOS 11=T3a 
+12=T3b 13 = T3C
+14=T4 NOS","1 = No
+2 = Yes
+9 = Unknown",Continuous,Text field,"1 = No
+2 = Yes
+9 = Unknown",Continuous,"1 = No
+2 = Yes
+9 = Unknown",Continuous,"1 = No
+2 = Yes
+9 = Unknown",Continuous,"1 = No
+2 = Yes
+9 = Unknown",Continuous,Text field,continuous,1= NMOL/L 2 = NG/DL 3 = NG/ML,Continuous,Continuous,Continuous,Continuous,0 = N/A 1 = RT Toxicity 2 = patient Refusal 3 = Progressive disorder 4 = Death 5 = Other,1 – 4-6 MEV 2 – 8-10 MEV 3- 11-18 MEV 4- >18 MEV 5- Other,Continuous,Text,Text,"0 = Alive
+1 = Dead",continuous,"1= Treated cancer
+2= Complications of protocol treatment 3=Other
+4= Unknown","0= Censored
+1= Failure (metastatic prostate cancer)
+2= Competing event (death without failure)",Continuous,"0= Censored
+1= Failure (second biochemical recurrence)
+2= Competing event (death without failure)",Continuous,1 = acute toxicity 2 = late toxicity 3 = hormone toxicity,text,Continuous,continious,,9413,Text,"1 = Pre + Boost
+2 = Pre + Prostate
+3= Boost/Horm
+4= Pros Rt/Horm",Continuous,1 = N/MG 2 = NG/ML 3 = NGM 4 = U/L 5=MG/L 6 = NG/DL 7 = MCG/L,Continuous,Texts,,,9413,Text,"1 = Pre + Boost
+2 = Pre + Prostate
+3= Boost/Horm
+4= Pros Rt/Horm",Continuous,"1 = ng/dl 2 = ng/ml 3 = nmol/l
+4 = units/NOS",Continuous,Texts,,9413,Text,Continuous,Continuous,Texts,Texts,Continuous,,,,,,,,,,,

@@ -1,0 +1,50 @@
+Variable Name,sn,Cn_deidentified,rx,Randomization_year,age,Kanofsky,,race,Prior_cancer,Intercurrent_cardio,Intercurrent _diabetes,Intercurrent _hyperextension,Intercurrent_other,Intercurrent_other_specified,gleason_primary,Gleason_secondary,,Baseline_psa,nstage,tstage,Baseline_serum,Baseline_serum_nmol_l,Salvage_Type,Salvage_comment,Salvage_years,survival,survival_years,cod,Distant_mets,Distant_mets_years,Biochemical_failure,Biochemical_failure _years,Local_failure,Local_failure_years,disease_free_survival,Disease_free_survival_years,disease_specific_survival,,,,sn,Cn_deidentified,rx,PSA,Psa_years,Form,,,sn,Cn_deidentified,rx,Serum_value,Serum_Unit,Serum_years,Form,,AE_time_frame,AE _cat,AE _grade,AE _date,,Bean_whole_pelvis,Pelvis_dose,Pelvis_fraction,Rt_pevlis_start_date,Rt_pelvis_end_date,,Bean_whole_prostate,Prostate_dose,Prostate_fraction,Rt_prostate_start_date,Rt_prostate_end_date,,,Bean_whole_para_aortics,Para_aortics_dose,Para_aortics_fraction,Rt_para_aortics_start_date,Rt_para_aortics_end_date,,RT_complete,RT_disc_reason,,sn,Cn_deidentified,Slide_id,Slide_id,Usi_Short,USI_Specimen,Block_ID
+Format/Coding,9202,Text,"1 = Hormones until end of RT
+2 = Hormones for 2+yrs post RT",Continious,continuous,Continuous,,"1 = White
+2 = Hispanic
+3 = African American
+4 = Asian
+5 = Native American
+6 = Native american
+7 = Other
+8= Unknown
+9 = Prefer not to answer","1 = No
+2 = Yes
+9 = Unknown","1 = No
+2 = Yes
+9 = Unknown","1 = No
+2 = Yes
+9 = Unknown","1 = No
+2 = Yes
+9 = Unknown","1 = No
+2 = Yes
+9 = Unknown",texts,"1-5, 9=Unknown","1-5, 9=Unknown",,Continuous,0 = N0 1 = N1 2 = N2 3 = N3 9 = NX,"0 TO
+1 T1, NOS
+2 T2,NOS
+3 T3,NOS
+4 T4,NOS
+5 T1a
+6 T1b
+10 T1c
+7 T2a
+8 T2b
+11 T2c
+12 T3a
+13 T3b
+14 T3c
+15 T4a
+16 T4b",continuous,continiuous,1 = Orchiectomy 2 = Surgery 3 = Hormones 4 = Chemotherapy 5 = Additional RT 6 = Other,Text Field,Continuous,"0 = Alive
+1 = Dead",continuous,"1= Treated cancer
+2= Related to a second primary tumor
+3= Complications of protocol treatment 4=Complications of Other treatment
+5= Other
+9= Unknown","0= Censored
+1= Failure
+2= Competing event",Continuous,"0= Censored
+1= Failure 
+2= Competing event",Continuous,0 = Censored 1 = Local Failure 2 = Competing Risk,continuous,"0=Alive, no failure, 1=Failure,",Continuous,0 = Censored 1 = Failure 2 = Competing Risk,,,,9202,Text,"1 = Hormones until end of RT
+2 = Hormones for 2+yrs post RT",Continuous,Continuous,Texts,,,9202,Text,"1 = Hormones until end of RT
+2 = Hormones for 2+yrs post RT",Continuous,Texts,Continuous,Texts,,Texts,text,Continuous,Date field,,"1- Co-60 2 – 4-6MEB 3 -8-10 MEV 
+4 – 11-18 MEV 5- >18 MEV 6 - Other",continuous,Continuous,Continuous,Continuous,,"1- Co-60 2 – 4-6MEB 3 -8-10 MEV 
+4 – 11-18 MEV 5- >18 MEV 6 - Other",continuous,Continuous,Continuous,Continuous,,,"1- Co-60 2 – 4-6MEB 3 -8-10 MEV 
+4 – 11-18 MEV 5- >18 MEV 6 - Other",continuous,Continuous,Continuous,Continuous,,0- NA 1 – No 2 – Yes 9 - Unknown,0 – NA 1 – RT Toxicity 2 – Patient refusal or non-compliance 3 – Progressive disease 4 –Death 5 - Other,,9413,Text,Continuous,Continuous,Texts,Texts,Continuous

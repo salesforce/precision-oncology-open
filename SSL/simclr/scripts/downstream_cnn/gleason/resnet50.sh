@@ -1,0 +1,11 @@
+python train_rtog_cnn_on_representations.py \
+  --optimizer=Adam \
+  --num_epochs=50 \
+  --weight_decay=5e-3 \
+  --learning_rate=0.00003 \
+  --n_input_features=4096 \
+  --use_cache=True \
+  --max_cache_size=200 \
+  --batch_size=8 \
+  --study_number_path="/export/medical_ai/ucsf/simclr_rtog/imagenet_data/model_resnet50_2x_sk_supervised/{}_quilts/" \
+  --output_dir="/export/medical_ai/ucsf/simclr_rtog/imagenet_data/model_resnet50_2x_sk_supervised/results_lr=0.00003/" \
